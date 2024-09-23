@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ id }}</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/vars.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/template.css') }}"
+    />
+  </head>
+  <body>
+    <div id="sidebar">
+      <h1 class="title" contenteditable="true"></h1>
+      <hr />
+      <ul class="sections"></ul>
+    </div>
+    <div id="content">
+      <div class="inset">
+        <h1 class="title"></h1>
+      </div>
+    </div>
+
+    <script>
+      var id = {{ id }}
+    </script>
+
+    <script src="{{ url_for('static', filename='js/template.js') }}"></script>
+  </body>
+</html>

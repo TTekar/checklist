@@ -1,0 +1,105 @@
+{
+    "lastTemplateId": 2,
+    "templates": [
+        {
+            "id": 1,
+            "lastSectionId": 1,
+            "name": "Template 0",
+            "sections": [
+                {
+                    "content": [
+                        {
+                            "checked": false,
+                            "name": "finish this",
+                            "type": "task"
+                        },
+                        {
+                            "checked": false,
+                            "name": "finish this part 2",
+                            "type": "task"
+                        },
+                        {
+                            "name": "Group 1",
+                            "tasks": [
+                                {
+                                    "checked": false,
+                                    "name": "task 1.1",
+                                    "type": "task"
+                                },
+                                {
+                                    "checked": false,
+                                    "name": "task 1.2",
+                                    "type": "task"
+                                }
+                            ],
+                            "type": "group"
+                        }
+                    ],
+                    "name": "Section 1",
+                    "sectionId": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "lastSectionId": 2,
+            "name": "The shit",
+            "sections": [
+                {
+                    "content": [
+                        {
+                            "checked": false,
+                            "name": "finish this parta 4",
+                            "type": "task"
+                        },
+                        {
+                            "name": "Group 1",
+                            "tasks": [
+                                {
+                                    "checked": false,
+                                    "name": "task 1.1awd",
+                                    "type": "task"
+                                }
+                            ],
+                            "type": "group"
+                        }
+                    ],
+                    "name": "Main section",
+                    "sectionId": 1
+                },
+                {
+                    "content": [
+                        {
+                            "checked": false,
+                            "name": "very original me being",
+                            "type": "task"
+                        },
+                        {
+                            "checked": false,
+                            "name": "ok but start working on the groups now",
+                            "type": "task"
+                        },
+                        {
+                            "name": "Group 2.1",
+                            "tasks": [
+                                {
+                                    "checked": false,
+                                    "name": "task oriafioae",
+                                    "type": "task"
+                                },
+                                {
+                                    "checked": false,
+                                    "name": "taskaef aawerf ",
+                                    "type": "task"
+                                }
+                            ],
+                            "type": "group"
+                        }
+                    ],
+                    "name": "Not so main section",
+                    "sectionId": 2
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+
+body {
+    background-color: var(--background-primary);
+    overflow: hidden;
+}
+
+
+/*? Scroll bar */
+
+html ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+  
+html ::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: inherit;
+}
+   
+html ::-webkit-scrollbar-thumb {
+    background: var(--gray); 
+    border-radius: 8px;
+}
+  
+/* html ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-background); 
+} */
+
+
+#templates {
+    position: absolute;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--background-secondary);
+}
+
+#checklists {
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--background-primary);
+}
+
+.title {
+    color: var(--text);
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 32px;
+}
+
+.list {
+    width: auto;
+    height: calc(100vh - 106px);
+    margin: 32px 16px 16px 16px;
+    list-style: none;
+    overflow-y: auto;
+}
+
+.list .template {
+    background-color: var(--item-primary);
+    margin-bottom: 16px;
+    padding: 16px;
+    color: var(--text);
+    border-radius: 16px;
+    transition: all ease .25s;
+}
+
+.list .template:hover {
+    background-color: var(--item-secondary);
+    transition: all ease .25s;
+}
+
+.list .template .template-id {
+    font-size: 12px;
+    color: var(--gray);
+    display: inline;
+    margin-right: 8px;
+}
+
+.list .template .template-title {
+    font-size: 16px;
+    color: var(--text);
+    display: inline;
+}
+
+.list .template .template-use {
+    font-size: 16px;
+    color: var(--gray);
+    text-decoration: none;
+    float: right;
+    display: inline;
+    user-select: none;
+    cursor: pointer;
+}
+
+.list .template .template-edit {
+    font-size: 16px;
+    color: var(--gray);
+    text-decoration: none;
+    float: right;
+    display: inline;
+    margin-left: 16px;
+}

@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-primary);
+    overflow: hidden;
+}
+
+#sidebar {
+    width: 20vw;
+    height: 100vh;
+    background-color: var(--background-secondary);
+    position: absolute;
+    left: 0;
+}
+
+#sidebar .title {
+    color: var(--text);
+    font-size: 24px;
+    margin: 16px 16px 0 16px;
+    width: auto;
+}
+
+#sidebar hr {
+    border: none;
+    border-top: 1px solid var(--gray);
+    margin: 8px 16px;
+}
+
+#sidebar .sections {
+    margin: 16px;
+    height: calc(100vh - 88px);
+    width: auto;
+    list-style: none;
+    overflow-y: auto;
+}
+
+#sidebar .sections .template-section {
+    margin: 16px 0;
+    color: var(--text);
+    font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+
+#content {
+    width: 80vw;
+    height: 100vh;
+    background-color: var(--background-primary);
+    position: absolute;
+    right: 0;
+}
+
+#content .inset {
+    width: 60vw;
+    height: 100vh;
+    margin: 0 10vw;
+}
+
+#content .inset .title {
+    margin-top: 16px;
+    font-size: 32px;
+    color: var(--text);
+}
+
+#content .inset hr {
+    border: none;
+    border-top: 1px solid var(--gray);
+    margin: 8px 0;
+}
+
+#content .inset label {
+    margin-top: 16px;
+    font-size: 16px;
+    color: var(--text);
+    display: block;
+    transition: all .25s ease;
+    cursor: text;
+}
+
+#content .inset label:has(input:checked) {
+    text-decoration: line-through 1px var(--gray);
+    color: var(--gray);
+}
+
+#content .inset label > input {
+    appearance: none;
+    margin: 0;
+    float: left;
+    margin: 2px 8px 2px 2px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    background-color: inherit;
+}
+
+#content .inset label > input::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 4px;
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    transition: transform .25s ease;
+    box-shadow: inset 12px 12px var(--gray);
+}
+
+#content .inset label > input:checked::before {
+    transform: scale(1);
+}
+
+#content .inset label > a {
+    float: right;
+    margin-right: 16px;
+    color: var(--gray);
+    cursor: pointer;
+    user-select: none;
+}
+
+
+#content .inset > h2 {
+    margin-top: 16px;
+    font-size: 24px;
+    color: var(--text);
+    display: block;
+    transition: all .25s ease;
+}
+
+#content .inset > h2 > a {
+    float: right;
+    margin-right: 16px;
+    color: var(--gray);
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+#content .inset > div {
+    padding-left: 16px;
+    padding-bottom: 8px;
+}
+
+#content .inset > h2.all-checked {
+    color: var(--gray);
+    text-decoration: line-through 1px var(--gray);
+}
