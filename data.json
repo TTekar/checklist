@@ -33,6 +33,10 @@
                                 }
                             ],
                             "type": "group"
+                        },
+                        {
+                            "name": "finish this part 2",
+                            "type": "text"
                         }
                     ],
                     "name": "Section 1",
