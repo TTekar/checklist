@@ -83,12 +83,12 @@ body {
     cursor: text;
 }
 
-#content .inset label:has(input:checked) {
+/* #content .inset label:has(input[type="checkbox"]:checked) {
     text-decoration: line-through 1px var(--gray);
     color: var(--gray);
-}
+} */
 
-#content .inset label > input {
+#content .inset label > input[type="checkbox"] {
     appearance: none;
     margin: 0;
     float: left;
@@ -100,7 +100,7 @@ body {
     background-color: inherit;
 }
 
-#content .inset label > input::before {
+#content .inset label > input[type="checkbox"]::before {
     content: "";
     display: block;
     position: relative;
@@ -114,9 +114,9 @@ body {
     box-shadow: inset 12px 12px var(--gray);
 }
 
-#content .inset label > input:checked::before {
+/* #content .inset label > input[type="checkbox"]:checked::before {
     transform: scale(1);
-}
+} */
 
 #content .inset label > a {
     float: right;
@@ -154,4 +154,30 @@ body {
 #content .inset > h2.all-checked {
     color: var(--gray);
     text-decoration: line-through 1px var(--gray);
+}
+
+
+#content .inset label > input[type="text"] {
+    appearance: none;
+    margin: 0;
+    float: right;
+    margin: 0px 4px 0px 2px;
+    padding: 2px;
+    width: 100px;
+    height: 16px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    background-color: inherit;
+    user-select: none;
+    pointer-events: none;
+}
+
+#content .inset label > input[type="text"]::placeholder {
+    opacity: .5;
+}
+
+#content .inset label > .unit {
+    float: right;
+    margin: 0px 8px 0px 2px;
+    color: var(--text);
 }

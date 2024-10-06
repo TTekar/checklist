@@ -10,36 +10,19 @@
                     "content": [
                         {
                             "checked": false,
-                            "name": "finish this",
+                            "id": 124,
+                            "name": "Section adding and removing",
                             "type": "task"
                         },
                         {
                             "checked": false,
-                            "name": "finish this part 2",
-                            "type": "task"
-                        },
-                        {
-                            "name": "Group 1",
-                            "tasks": [
-                                {
-                                    "checked": false,
-                                    "name": "task 1.1",
-                                    "type": "task"
-                                },
-                                {
-                                    "checked": false,
-                                    "name": "task 1.2",
-                                    "type": "task"
-                                }
-                            ],
-                            "type": "group"
-                        },
-                        {
-                            "name": "finish this part 2",
-                            "type": "text"
+                            "name": "Template adding and removing",
+                            "type": "task",
+                            "id": 125
                         }
                     ],
-                    "name": "Section 1",
+                    "lastItemId": 125,
+                    "name": "To do",
                     "sectionId": 1
                 }
             ]
